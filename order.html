@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Galvanize Delivers</title>
+
+<!--Import jQuery before materialize.js-->
+<script defer src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script defer src="js/materialize.js"></script>
+<script defer src="js/index.js"></script>
+
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/materialize.css">
+<link rel="stylesheet" href="css/additional.css">
+</head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue darken-3">
+          <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
+          </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="order.html">Order delivery</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="order.html" class="active">Order delivery</a></li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  <main>
+    <div class="container">
+<!-- Left side of page -->
+      <div class="row">
+            <div class="col m7 s12 left-align">
+              <h3>Menu</h3>
+              <div class="row">
+                <div class="col l6 m12 left-align">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/burger.jpg" alt="burger">
+                    </div>
+                    <div class="card-content">
+                      <h6>Royale with Cheese</h6>
+                      <p>$8.99</p>
+                    </div>
+                    <div class="card-action">
+                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l6 m12 left-align">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/pizza.jpg">
+                    </div>
+                    <div class="card-content">
+                      <h6>Arugula Pie</h6>
+                      <p>$11.99</p>
+                    </div>
+                    <div class="card-action">
+                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col l6 m12 left-align">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/ribs.jpg">
+                    </div>
+                    <div class="card-content">
+                      <h6>Smoked Swine</h6>
+                      <p>$14.99</p>
+                    </div>
+                    <div class="card-action">
+                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l6 m12 left-align">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/ice_cream.jpg">
+                    </div>
+                    <div class="card-content">
+                      <h6>Ice Cream Biscut</h6>
+                      <p>$7.99</p>
+                    </div>
+                    <div class="card-action">
+                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- End of left side of page -->
+
+<!-- Right side of page -->
+      <div class="col m5 s12 left-align">
+              <h3>Order</h3>
+        <div>
+          <table id="itemsList"class="striped">
+            <thead>
+              <tr>
+                  <th data-field="item">Item</th>
+                  <th class="right-align" data-field="price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- items and prices -->
+              <tr>
+                <td id="itemName">Alvin</td>
+                <td id="priceItem"class="right-align">$0.87</td>
+              </tr>
+            </tbody>
+          </table>
+          <table id="totalTable" class="offset-s6 col s6">
+            <tr>
+              <td class="right-align">Subtotal: </td>
+              <td id="subtotal" class="right-align"></td>
+            </tr>
+            <tr>
+              <td class="right-align">Tax 9.6%: </td>
+              <td id="tax"class="right-align"></td>
+            </tr>
+            <tr>
+              <td class="right-align">Total: </td>
+              <td id="total" class="right-align"></td>
+            </tr>
+          </table>
+        </div>
+<!-- Customer Info -->
+        <div class="row input_form">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" type="text" class="validate">
+                <label for="name" data-error="required">First Name</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">phone</i>
+                <input id="phone" type="tel" class="validate">
+                <label for="phone" data-error="required">Telephone</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">business</i>
+                <input id="address" type="text" class="validate">
+                <label for="address" data-error="required">Address</label>
+              </div>
+            </div>
+            <div class="center-align">
+              <button class="waves-effect waves-light btn-large pink accent-2" type="submit" name="submitOrder">PLACE ORDER</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </main>
+
+      <footer class="page-footer blue darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Galvanize Delivers</h5>
+                <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-4">
+            <div class="container">
+              <div class="row">
+                <div class="col s12">
+                  © 2016 Copyright Galvanize Delivers Inc.
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  </body>
+</html>
