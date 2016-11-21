@@ -45,12 +45,14 @@
                     <div class="card-image">
                       <img src="img/burger.jpg" alt="burger">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content burger">
                       <h6>Royale with Cheese</h6>
                       <p>$8.99</p>
                     </div>
                     <div class="card-action">
-                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                      <button type="button" id="burger" value="8.99" class="pink-text button-on-cards">ADD TO ORDER</button>
+
+                      <!-- type="button" class="pink-text" href="#">ADD TO ORDER</a> -->
                     </div>
                   </div>
                 </div>
@@ -59,12 +61,12 @@
                     <div class="card-image">
                       <img src="img/pizza.jpg">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content pizza">
                       <h6>Arugula Pie</h6>
                       <p>$11.99</p>
                     </div>
                     <div class="card-action">
-                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                      <button type="button" id="pizza" value="11.99" class="pink-text button-on-cards">ADD TO ORDER</button>
                     </div>
                   </div>
                 </div>
@@ -75,12 +77,12 @@
                     <div class="card-image">
                       <img src="img/ribs.jpg">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content ribs">
                       <h6>Smoked Swine</h6>
                       <p>$14.99</p>
                     </div>
                     <div class="card-action">
-                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                      <button type="button" id="ribs" value="14.99" class="pink-text button-on-cards">ADD TO ORDER</button>
                     </div>
                   </div>
                 </div>
@@ -89,12 +91,12 @@
                     <div class="card-image">
                       <img src="img/ice_cream.jpg">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content iceCream">
                       <h6>Ice Cream Biscut</h6>
                       <p>$7.99</p>
                     </div>
                     <div class="card-action">
-                      <a class="pink-text" href="#">ADD TO ORDER</a>
+                      <button type="button" id="iceCream" value="7.99" class="pink-text button-on-cards">ADD TO ORDER</button>
                     </div>
                   </div>
                 </div>
@@ -113,12 +115,7 @@
                   <th class="right-align" data-field="price">Price</th>
               </tr>
             </thead>
-            <tbody>
-              <!-- items and prices -->
-              <tr>
-                <td id="itemName">Alvin</td>
-                <td id="priceItem"class="right-align">$0.87</td>
-              </tr>
+            <tbody class="listItem">
             </tbody>
           </table>
           <table id="totalTable" class="offset-s6 col s6">
@@ -157,7 +154,7 @@
               </div>
             </div>
             <div class="center-align">
-              <button class="waves-effect waves-light btn-large pink accent-2" type="submit" name="submitOrder">PLACE ORDER</button>
+              <button class="waves-effect waves-light btn-large pink accent-2" type="submit" id="submitOrder">PLACE ORDER</button>
             </div>
           </form>
         </div>
